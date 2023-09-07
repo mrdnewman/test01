@@ -2,7 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Bash Script') {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+stage('Build and Test') {
             steps {
                 sh '''
                     #!/bin/bash
@@ -13,3 +18,8 @@ pipeline {
         }
     }
 }
+
+        
+
+
+        
