@@ -1,0 +1,6 @@
+# This is a comment and will be ignored by pip
+numpy==1.19.5            # Specific version
+requests>=2.25.1         # Minimum version
+flask==2.0.1             # Specific version
+matplotlib>=3.4.3,<3.5   # Minimum version with maximum version constraint
+pandas>=1.3.3,<2.0       # Minimum version with maximum version constraint
