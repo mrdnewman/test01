@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Run Bash Script') {
+            steps {
+                script {
+                    // Define your Bash script here
+                    def bashScript = """
+                        #!/bin/bash
+                        echo "Hello, Jenkins!"
+                        # Add more commands as needed
+                    """
+
+                    // Create a temporary shell script file
+                    def scriptFile = writeFile(file: 'temp_script.sh', text: bashScript)
+
+                    // Make the script file executable
+                    sh "chmod +x ${scriptFile}"
+
+                    // Execute the Bash script
+                    sh "./${scriptFile}"
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Clean up the temporary script file
+            deleteFile 'temp_script.sh'
+        }
+    }
+}
