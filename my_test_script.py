@@ -16,6 +16,7 @@ def test_addition():
             break
 
         print(Number)
+        time.sleep(1)
         Number += 1
 
 if __name__ == "__main__":
