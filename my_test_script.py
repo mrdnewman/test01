@@ -14,9 +14,9 @@ def test_addition():
     while True:
         if Number > 10:
             break
-
-        print(Number)
+   
         time.sleep(1)
+        print(Number)
         Number += 1
 
 if __name__ == "__main__":
