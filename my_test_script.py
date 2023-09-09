@@ -1,6 +1,9 @@
 import time
 import os
 
+os.environ['TERM'] = 'xterm'
+    
+
 def add(a, b):
     """Add two numbers and return the result."""
     return a + b
@@ -10,9 +13,7 @@ def test_addition():
     result = add(2, 3)
     assert result == 5, f"Expected 5 but got {result}"
     
-    os.environ['TERM'] = 'xterm'
     countdown = 10
-
     while countdown >= 1:
         print(countdown)
         countdown -= 1
