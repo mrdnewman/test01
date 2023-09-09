@@ -8,8 +8,15 @@ def test_addition():
     """Test the addition function."""
     result = add(2, 3)
     assert result == 5, f"Expected 5 but got {result}"
-    print("Sleeping for 10 seconds...")
-    time.sleep(10)
+    print("Starting 10 Sec Count Down...")
+
+    Number = 1
+    while True:
+        if Number > 10:
+            break
+
+        print(Number)
+        Number += 1
 
 if __name__ == "__main__":
     test_addition()
