@@ -9,7 +9,7 @@ def test_addition():
     result = add(2, 3)
     assert result == 5, f"Expected 5 but got {result}"
 
-
+countdown = 0
 while countdown > 0:
     # Display the countdown number
     print(countdown)
