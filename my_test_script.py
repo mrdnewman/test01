@@ -8,6 +8,7 @@ def test_addition():
     """Test the addition function."""
     result = add(2, 3)
     assert result == 5, f"Expected 5 but got {result}"
+    print("Sleeping for 10 seconds...")
     time.sleep(10)
 
 if __name__ == "__main__":
