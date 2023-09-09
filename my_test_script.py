@@ -10,7 +10,7 @@ def test_addition():
     result = add(2, 3)
     assert result == 5, f"Expected 5 but got {result}"
     
-    export TERM=xterm
+    os.environ['TERM'] = 'xterm'
     countdown = 10
 
     while countdown >= 1:
