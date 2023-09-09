@@ -9,7 +9,8 @@ def test_addition():
     """Test the addition function."""
     result = add(2, 3)
     assert result == 5, f"Expected 5 but got {result}"
-
+    
+    export TERM=xterm
     countdown = 10
 
     while countdown >= 1:
