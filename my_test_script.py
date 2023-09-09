@@ -17,10 +17,9 @@ def test_addition():
     while countdown >= 1:
         print(countdown)
         countdown -= 1
+        time.sleep(1)
+        os.system('clear')
 
-
-# Clear the screen one last time
-os.system('clear')
 
 if __name__ == "__main__":
     test_addition()
